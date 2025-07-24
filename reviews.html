@@ -1,0 +1,132 @@
+<!--
+  College Cuts Lawn Care
+  Reviews page – real feedback from our happy customers.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reviews – College Cuts Lawn Care</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brandGreen: '#006400',
+            brandOrange: '#FFA500',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-sans antialiased">
+  <!-- Navigation -->
+  <nav class="bg-brandGreen text-white sticky top-0 z-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <div class="flex items-center">
+          <a href="index.html" class="flex items-center space-x-2">
+            <img src="images/logo.jpeg" alt="Logo" class="h-8 w-auto">
+            <span class="font-bold text-lg hidden sm:block">College Cuts</span>
+          </a>
+        </div>
+        <div class="hidden md:block">
+          <div class="ml-10 flex items-baseline space-x-4">
+            <a href="index.html" class="px-3 py-2 rounded-md text-sm font-medium hover:text-brandOrange">Home</a>
+            <a href="services.html" class="px-3 py-2 rounded-md text-sm font-medium hover:text-brandOrange">Services</a>
+            <a href="about.html" class="px-3 py-2 rounded-md text-sm font-medium hover:text-brandOrange">About</a>
+            <a href="gallery.html" class="px-3 py-2 rounded-md text-sm font-medium hover:text-brandOrange">Gallery</a>
+            <a href="reviews.html" class="px-3 py-2 rounded-md text-sm font-medium text-brandOrange font-semibold">Reviews</a>
+            <a href="contact.html" class="px-3 py-2 rounded-md text-sm font-medium hover:text-brandOrange">Contact</a>
+          </div>
+        </div>
+        <div class="-mr-2 flex md:hidden">
+          <button id="mobile-menu-button" type="button" class="bg-brandGreen inline-flex items-center justify-center p-2 rounded-md text-white hover:text-brandOrange hover:bg-brandGreen focus:outline-none">
+            <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="mobile-menu" class="md:hidden hidden">
+      <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-brandGreen">
+        <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-brandOrange">Home</a>
+        <a href="services.html" class="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-brandOrange">Services</a>
+        <a href="about.html" class="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-brandOrange">About</a>
+        <a href="gallery.html" class="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-brandOrange">Gallery</a>
+        <a href="reviews.html" class="block px-3 py-2 rounded-md text-base font-medium text-brandOrange font-semibold">Reviews</a>
+        <a href="contact.html" class="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-brandOrange">Contact</a>
+      </div>
+    </div>
+  </nav>
+  <!-- Header -->
+  <header class="bg-gray-100 py-12 text-center">
+    <h1 class="text-4xl font-extrabold text-brandGreen mb-2">What Our Customers Say</h1>
+    <p class="text-gray-600 max-w-3xl mx-auto">Nothing makes us happier than a satisfied customer.  Below are a few testimonials from people we’ve had the pleasure of serving across northeast Ohio.</p>
+  </header>
+  <!-- Reviews -->
+  <main class="py-12 bg-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- Review 1 -->
+      <blockquote class="bg-gray-50 rounded-lg shadow p-6 flex flex-col h-full">
+        <p class="text-gray-700 italic mb-4 flex-1">“College Cuts has kept our yard pristine all summer.  The crew shows up on schedule, works quickly and leaves the place spotless.  I love supporting students who are working hard for their education.”</p>
+        <footer class="text-sm font-semibold text-brandGreen">Sarah T., Strongsville</footer>
+      </blockquote>
+      <!-- Review 2 -->
+      <blockquote class="bg-gray-50 rounded-lg shadow p-6 flex flex-col h-full">
+        <p class="text-gray-700 italic mb-4 flex-1">“We’ve had other lawn services in the past, but none have been as reliable as College Cuts.  They even helped us with leaf removal last fall on short notice.  Highly recommend!”</p>
+        <footer class="text-sm font-semibold text-brandGreen">Mark W., Westlake</footer>
+      </blockquote>
+      <!-- Review 3 -->
+      <blockquote class="bg-gray-50 rounded-lg shadow p-6 flex flex-col h-full">
+        <p class="text-gray-700 italic mb-4 flex-1">“These young men are polite, professional and reasonably priced.  Our lawn has never looked better, and it feels good to help them pay for school.”</p>
+        <footer class="text-sm font-semibold text-brandGreen">Emily R., Olmsted Falls</footer>
+      </blockquote>
+      <!-- Review 4 -->
+      <blockquote class="bg-gray-50 rounded-lg shadow p-6 flex flex-col h-full">
+        <p class="text-gray-700 italic mb-4 flex-1">“As a property manager, I appreciate having a dependable team I can count on.  College Cuts handles multiple rental properties for me, and my tenants are always happy with the results.”</p>
+        <footer class="text-sm font-semibold text-brandGreen">Jacob S., North Olmsted</footer>
+      </blockquote>
+      <!-- Review 5 -->
+      <blockquote class="bg-gray-50 rounded-lg shadow p-6 flex flex-col h-full">
+        <p class="text-gray-700 italic mb-4 flex-1">“I wasn’t sure what to expect hiring college students, but they blew me away!  They even suggested a fertilization plan to help my grass recover after a tough winter.  I’ll be a repeat customer for sure.”</p>
+        <footer class="text-sm font-semibold text-brandGreen">Linda G., Berea</footer>
+      </blockquote>
+    </div>
+  </main>
+  <!-- Footer -->
+  <footer class="bg-brandGreen text-white py-8">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-start md:items-center space-y-6 md:space-y-0">
+      <div>
+        <h3 class="font-semibold text-lg mb-2">College Cuts Lawn Care</h3>
+        <p class="text-sm max-w-xs">Serving the communities of Strongsville, Westlake, Olmsted Falls and nearby areas.  Student‑owned and operated.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-2">Contact Us</h4>
+        <p class="text-sm"><strong>Email:</strong> <a href="mailto:collegecutslawncare@gmail.com" class="hover:text-brandOrange">collegecutslawncare@gmail.com</a></p>
+        <p class="text-sm"><strong>Phone:</strong> <a href="tel:+1-555-123-4567" class="hover:text-brandOrange">(555) 123‑4567</a></p>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-2">Follow Us</h4>
+        <div class="flex space-x-4">
+          <a href="#" aria-label="Instagram" class="hover:text-brandOrange">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M7.5 2A5.5 5.5 0 002 7.5v9A5.5 5.5 0 007.5 22h9a5.5 5.5 0 005.5-5.5v-9A5.5 5.5 0 0016.5 2h-9zm0 2h9A3.5 3.5 0 0120 7.5v9a3.5 3.5 0 01-3.5 3.5h-9A3.5 3.5 0 014 16.5v-9A3.5 3.5 0 017.5 4zm9.13 1.5a1.13 1.13 0 100 2.26 1.13 1.13 0 000-2.26zm-4.63 2A5.5 5.5 0 007.5 13a5.5 5.5 0 005.5 5.5A5.5 5.5 0 0018.5 13a5.5 5.5 0 00-5.5-5.5zm0 2A3.5 3.5 0 1116 13a3.5 3.5 0 01-3.5-3.5z"/></svg>
+          </a>
+          <a href="#" aria-label="Facebook" class="hover:text-brandOrange">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M13.25 22V12.07h3.28l.49-3.81h-3.77V6.54c0-1.1.29-1.86 1.79-1.86h1.91V1.14C16.42 1.1 15.47 1 14.38 1c-2.7 0-4.57 1.65-4.57 4.68v2.58H7.06v3.81h2.75V22h3.44z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="mt-8 text-center text-xs text-gray-300">© <span id="year"></span> College Cuts Lawn Care.</div>
+  </footer>
+  <script>
+    document.getElementById('mobile-menu-button').addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

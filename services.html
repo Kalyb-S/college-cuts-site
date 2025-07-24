@@ -1,0 +1,176 @@
+<!--
+  College Cuts Lawn Care
+  Services page – describes all of the lawn care services we offer.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services – College Cuts Lawn Care</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brandGreen: '#006400',
+            brandOrange: '#FFA500',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-sans antialiased">
+  <!-- Navigation (same as on index) -->
+  <nav class="bg-brandGreen text-white sticky top-0 z-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <div class="flex items-center">
+          <a href="index.html" class="flex items-center space-x-2">
+            <img src="images/logo.jpeg" alt="Logo" class="h-8 w-auto">
+            <span class="font-bold text-lg hidden sm:block">College Cuts</span>
+          </a>
+        </div>
+        <div class="hidden md:block">
+          <div class="ml-10 flex items-baseline space-x-4">
+            <a href="index.html" class="px-3 py-2 rounded-md text-sm font-medium hover:text-brandOrange">Home</a>
+            <a href="services.html" class="px-3 py-2 rounded-md text-sm font-medium text-brandOrange font-semibold">Services</a>
+            <a href="about.html" class="px-3 py-2 rounded-md text-sm font-medium hover:text-brandOrange">About</a>
+            <a href="gallery.html" class="px-3 py-2 rounded-md text-sm font-medium hover:text-brandOrange">Gallery</a>
+            <a href="reviews.html" class="px-3 py-2 rounded-md text-sm font-medium hover:text-brandOrange">Reviews</a>
+            <a href="contact.html" class="px-3 py-2 rounded-md text-sm font-medium hover:text-brandOrange">Contact</a>
+          </div>
+        </div>
+        <div class="-mr-2 flex md:hidden">
+          <button id="mobile-menu-button" type="button" class="bg-brandGreen inline-flex items-center justify-center p-2 rounded-md text-white hover:text-brandOrange hover:bg-brandGreen focus:outline-none" aria-expanded="false">
+            <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="mobile-menu" class="md:hidden hidden">
+      <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-brandGreen">
+        <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-brandOrange">Home</a>
+        <a href="services.html" class="block px-3 py-2 rounded-md text-base font-medium text-brandOrange font-semibold">Services</a>
+        <a href="about.html" class="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-brandOrange">About</a>
+        <a href="gallery.html" class="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-brandOrange">Gallery</a>
+        <a href="reviews.html" class="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-brandOrange">Reviews</a>
+        <a href="contact.html" class="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-brandOrange">Contact</a>
+      </div>
+    </div>
+  </nav>
+  <!-- Page header -->
+  <header class="bg-gray-100 py-12 text-center">
+    <h1 class="text-4xl font-extrabold text-brandGreen mb-2">Our Services</h1>
+    <p class="text-gray-600 max-w-2xl mx-auto">We offer a wide range of lawn care services to keep your property looking its best.  Below is an overview of what we provide.  If you don’t see what you need, please <a href="contact.html" class="text-brandOrange hover:underline">contact us</a> for a custom quote.</p>
+  </header>
+  <!-- Services list -->
+  <main class="py-12 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-10">
+      <!-- Mowing -->
+      <div class="flex flex-col sm:flex-row items-start gap-6">
+        <div class="flex-shrink-0 bg-brandGreen text-white rounded-full p-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M4 12l4-4 4 4m-4-4v6"/></svg>
+        </div>
+        <div>
+          <h2 class="text-2xl font-semibold text-brandGreen mb-1">Mowing &amp; Trimming</h2>
+          <p class="text-gray-700 mb-2">Consistent lawn mowing keeps your grass healthy, promotes even growth and improves curb appeal.  Our crew will mow to the optimal height for your grass type and finish the job with precise trimming around borders and hard‑to‑reach areas.</p>
+          <p class="text-sm text-gray-500 italic">Contact us for a personalised quote based on property size and schedule.</p>
+        </div>
+      </div>
+      <!-- Edging -->
+      <div class="flex flex-col sm:flex-row items-start gap-6">
+        <div class="flex-shrink-0 bg-brandGreen text-white rounded-full p-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12h18M3 6h18M3 18h18"/></svg>
+        </div>
+        <div>
+          <h2 class="text-2xl font-semibold text-brandGreen mb-1">Edging &amp; Detailing</h2>
+          <p class="text-gray-700 mb-2">Our edging service creates crisp lines along driveways, sidewalks and flower beds.  Well‑defined edges add a polished look and keep grass from creeping where it shouldn’t.</p>
+          <p class="text-sm text-gray-500 italic">Great as an add‑on to regular mowing.</p>
+        </div>
+      </div>
+      <!-- Leaf cleanup -->
+      <div class="flex flex-col sm:flex-row items-start gap-6">
+        <div class="flex-shrink-0 bg-brandGreen text-white rounded-full p-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16v2H4V6zm0 4h16v2H4v-2zm0 4h16v2H4v-2z"/></svg>
+        </div>
+        <div>
+          <h2 class="text-2xl font-semibold text-brandGreen mb-1">Leaf &amp; Debris Cleanup</h2>
+          <p class="text-gray-700 mb-2">Fallen leaves can suffocate your lawn if they are left to pile up.  We’ll blow, rake and haul away leaves and yard waste so your grass can breathe and remain healthy over winter.</p>
+          <p class="text-sm text-gray-500 italic">Available in fall and spring seasons.</p>
+        </div>
+      </div>
+      <!-- Seasonal services -->
+      <div class="flex flex-col sm:flex-row items-start gap-6">
+        <div class="flex-shrink-0 bg-brandGreen text-white rounded-full p-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2v3a3 3 0 003 3 3 3 0 003-3v-3c0-1.105-1.343-2-3-2z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 9a7 7 0 007-7"/></svg>
+        </div>
+        <div>
+          <h2 class="text-2xl font-semibold text-brandGreen mb-1">Seasonal Care</h2>
+          <p class="text-gray-700 mb-2">Aeration, dethatching, fertilising and overseeding ensure your lawn thrives throughout the year.  We tailor our seasonal treatments to the conditions in northeast Ohio.</p>
+          <p class="text-sm text-gray-500 italic">Book early – slots fill up fast in spring and fall.</p>
+        </div>
+      </div>
+      <!-- Commercial contracts -->
+      <div class="flex flex-col sm:flex-row items-start gap-6">
+        <div class="flex-shrink-0 bg-brandGreen text-white rounded-full p-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v4m-7 9h20M5 19v2"/></svg>
+        </div>
+        <div>
+          <h2 class="text-2xl font-semibold text-brandGreen mb-1">Commercial &amp; HOAs</h2>
+          <p class="text-gray-700 mb-2">We also serve small businesses, homeowners associations and rental properties.  Reliable and affordable contracts keep your grounds welcoming for customers and tenants.</p>
+          <p class="text-sm text-gray-500 italic">Contact us to discuss customised service agreements.</p>
+        </div>
+      </div>
+      <!-- Custom projects -->
+      <div class="flex flex-col sm:flex-row items-start gap-6">
+        <div class="flex-shrink-0 bg-brandGreen text-white rounded-full p-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16"/></svg>
+        </div>
+        <div>
+          <h2 class="text-2xl font-semibold text-brandGreen mb-1">Custom Projects</h2>
+          <p class="text-gray-700 mb-2">If you’ve got a unique landscaping vision – from mulch installation to flower bed redesigns – we’re eager to help.  Our team enjoys creative projects that improve the beauty and function of your outdoor spaces.</p>
+          <p class="text-sm text-gray-500 italic">Reach out and tell us what you’re dreaming of!</p>
+        </div>
+      </div>
+    </div>
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 text-center">
+      <p class="text-gray-600">Every yard is different.  For an accurate estimate, we’ll visit your property and assess your needs.  <a href="contact.html" class="text-brandOrange hover:underline font-medium">Schedule a free quote</a> today.</p>
+    </div>
+  </main>
+  <!-- Footer (reuse from index) -->
+  <footer class="bg-brandGreen text-white py-8 mt-16">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-start md:items-center space-y-6 md:space-y-0">
+      <div>
+        <h3 class="font-semibold text-lg mb-2">College Cuts Lawn Care</h3>
+        <p class="text-sm max-w-xs">Serving our neighbours in Strongsville, Westlake, Olmsted Falls and surrounding communities.  Student‑owned and operated.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-2">Contact Us</h4>
+        <p class="text-sm"><strong>Email:</strong> <a href="mailto:collegecutslawncare@gmail.com" class="hover:text-brandOrange">collegecutslawncare@gmail.com</a></p>
+        <p class="text-sm"><strong>Phone:</strong> <a href="tel:+1-555-123-4567" class="hover:text-brandOrange">(555) 123‑4567</a></p>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-2">Follow Us</h4>
+        <div class="flex space-x-4">
+          <a href="#" aria-label="Instagram" class="hover:text-brandOrange">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M7.5 2A5.5 5.5 0 002 7.5v9A5.5 5.5 0 007.5 22h9a5.5 5.5 0 005.5-5.5v-9A5.5 5.5 0 0016.5 2h-9zm0 2h9A3.5 3.5 0 0120 7.5v9a3.5 3.5 0 01-3.5 3.5h-9A3.5 3.5 0 014 16.5v-9A3.5 3.5 0 017.5 4zm9.13 1.5a1.13 1.13 0 100 2.26 1.13 1.13 0 000-2.26zm-4.63 2A5.5 5.5 0 007.5 13a5.5 5.5 0 005.5 5.5A5.5 5.5 0 0018.5 13a5.5 5.5 0 00-5.5-5.5zm0 2A3.5 3.5 0 1116 13a3.5 3.5 0 01-3.5-3.5z"/></svg>
+          </a>
+          <a href="#" aria-label="Facebook" class="hover:text-brandOrange">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M13.25 22V12.07h3.28l.49-3.81h-3.77V6.54c0-1.1.29-1.86 1.79-1.86h1.91V1.14C16.42 1.1 15.47 1 14.38 1c-2.7 0-4.57 1.65-4.57 4.68v2.58H7.06v3.81h2.75V22h3.44z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="mt-8 text-center text-xs text-gray-300">© <span id="year"></span> College Cuts Lawn Care.</div>
+  </footer>
+  <script>
+    document.getElementById('mobile-menu-button').addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
